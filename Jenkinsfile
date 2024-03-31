@@ -16,18 +16,25 @@ pipeline{
                 git branch: 'main', credentialsId: 'github', url: 'https://github.com/subzero11/gitops-complete-production-pipeline'
             }
         }
+		
+		
+		
         stage('Build Application'){
             steps{
-                sh ""mvn clean
-                """
+				sh"""mvn clean package
+					
+				"""
             }
         }  
-        stage('Test Application'){
+		
+	    stage('Test Application'){
             steps{
-                sh """
-		mvn test
-                """
+				sh"""mvn test
+					
+				"""
             }
-        }
+        }  	
+		
+	    
     }
 }
