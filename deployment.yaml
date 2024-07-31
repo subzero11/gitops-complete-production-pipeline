@@ -10,14 +10,14 @@ spec:
   template:
     metadata:
       labels:
-        app: complete-poduction-e2e-app
+        app: complete-production-e2e-app
     spec:
       containers:
         - name: complete-production-e2e-app
           image: newguyinli/complete-production-pipeline:1.0.0-35
           resources:
-          limits:
-            memory: "256Mi"
-            cpu: '500m'
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
           ports:
-          - containerPort: 8080
+            - containerPort: 8080
