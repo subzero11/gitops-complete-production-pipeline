@@ -3,7 +3,7 @@ pipeline{
         label 'jenkins-agent'
     }
     environment{
-        APP_NAME = "gitops-complete-production-pipeline"
+        APP_NAME = "complete-production-e2e-pipeline"
     }
 
     stages{
