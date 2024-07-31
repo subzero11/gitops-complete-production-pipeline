@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      apps: complete-production-e2e-app
+      app: complete-production-e2e-app
   template:
     metadata:
       labels:
